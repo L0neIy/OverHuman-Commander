@@ -19,7 +19,12 @@ PASSPHRASE = os.getenv("PASSPHRASE", "")
 
 DRY_RUN = os.getenv("DRY_RUN", "true").lower() == "true"
 SANDBOX = os.getenv("SANDBOX", "true").lower() == "true"
-PAPER_LOG = os.getenv("PAPER_LOG", "paper_trades.csv")
+
+# 🔥 log เก็บลง /data เสมอ
+LOG_DIR = "data"
+os.makedirs(LOG_DIR, exist_ok=True)
+PAPER_LOG = os.path.join(LOG_DIR, "paper_trades.csv")
+
 
 # ===============================
 # Base Broker
@@ -37,6 +42,7 @@ class Broker(ABC):
     def place_order(self, symbol: str, side: str, size: float, price: float = None, stop: float = None, take: float = None):
         pass
 
+
 # ===============================
 # CCXT Broker with Paper Mode + Report
 # ===============================
@@ -47,7 +53,6 @@ class CCXTBroker(Broker):
         self.paper_log = paper_log
         self.paper_trades = []
 
-        # สร้าง exchange object ทั้ง Paper Mode และ Live Mode
         self.ex = getattr(ccxt, exchange)({
             'apiKey': api_key,
             'secret': api_secret,
@@ -66,11 +71,8 @@ class CCXTBroker(Broker):
         self.markets = self.ex.load_markets()
         self.hedge_mode = True if sandbox else self._check_hedge_mode()
 
-        # เตรียม log file สำหรับ Paper Mode
+        # prepare paper log
         if self.paper_mode:
-            folder = os.path.dirname(self.paper_log)
-            if folder and not os.path.exists(folder):
-                os.makedirs(folder, exist_ok=True)
             if not os.path.exists(self.paper_log):
                 with open(self.paper_log, mode="w", newline="") as f:
                     writer = csv.writer(f)
@@ -90,7 +92,6 @@ class CCXTBroker(Broker):
             return False
 
     def fetch_ohlcv(self, symbol: str, timeframe: str, limit: int):
-        # Paper Mode: ใช้ Live API ได้
         o = self.ex.fetch_ohlcv(symbol, timeframe=timeframe, limit=limit)
         df = pd.DataFrame(o, columns=['timestamp','open','high','low','close','volume'])
         df['timestamp'] = pd.to_datetime(df['timestamp'], unit='ms')
@@ -153,18 +154,6 @@ class CCXTBroker(Broker):
             print(f"[Order Error] {symbol} {side} {amt}: {e}")
             return None
 
-    def place_multi_orders(self, orders: list):
-        results = {}
-        for o in orders:
-            try:
-                results[o['symbol']] = self.place_order(o['symbol'], o['side'], o['size'])
-            except Exception as e:
-                results[o['symbol']] = f"Error: {str(e)}"
-        return results
-
-    # ===============================
-    # Report Generator
-    # ===============================
     def get_paper_report(self):
         if not os.path.exists(self.paper_log):
             return {"error": "No paper log found"}
@@ -200,7 +189,6 @@ class CCXTBroker(Broker):
         rolling_max = equity_series.cummax()
         drawdown = rolling_max - equity_series
         max_drawdown = drawdown.max()
-        avg_rr = df.get("RR", pd.Series([1]*len(df))).mean()
 
         return {
             "trades": trades,
@@ -212,8 +200,8 @@ class CCXTBroker(Broker):
             "per_symbol": per_symbol,
             "profit_factor": round(profit_factor, 2),
             "max_drawdown": round(max_drawdown, 2),
-            "avg_rr": round(avg_rr, 2)
         }
+
 
 # ===============================
 # Instantiate Broker
