@@ -7,7 +7,7 @@ class DataConfig:
     symbol: str = "BTC/USDT"                 # kept for backward compat
     symbols: List[str] = field(default_factory=lambda: [
         "BTC/USDT","ETH/USDT","BNB/USDT","SOL/USDT","ADA/USDT",
-        "XRP/USDT","LTC/USDT","MATIC/USDT","DOGE/USDT","LINK/USDT"
+        "XRP/USDT","LTC/USDT","BCH/USDT","DOGE/USDT","LINK/USDT"
     ])
     timeframe: str = "1h"
     lookback: int = 600                        # a bit longer for indicators
