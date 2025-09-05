@@ -22,7 +22,7 @@ from experts.vol_squeeze import VolSqueezeBreakout
 from meta import MetaLearner
 from risk import RiskGovernor
 from utils import atr_wilder
-from selectors import rank_by_momentum, pick_diversified
+from trade_selectors import rank_by_momentum, pick_diversified
 from logger import CommanderLogger
 from utils_sizing import compute_sl_tp, position_size_by_risk
 from autoscaler import AutoScaler

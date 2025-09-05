@@ -13,7 +13,7 @@ from experts.vol_squeeze import VolSqueezeBreakout
 from meta import MetaLearner
 from risk import RiskGovernor
 from utils import atr_wilder
-from selectors import rank_by_momentum, pick_diversified
+from trade_selectors import rank_by_momentum, pick_diversified
 
 FEE = 0.0005       # 0.05% per trade side
 SLIPPAGE = 0.001   # 0.10% adverse
