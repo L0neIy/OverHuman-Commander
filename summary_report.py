@@ -1,17 +1,38 @@
 import pandas as pd
 import os
+import json
+import requests
 
 LOG_FILE = "data/paper_trades.csv"
+SUMMARY_CSV = "data/summary_report.csv"
+SUMMARY_JSON = "data/summary_report.json"
+
+def send_telegram_message(message: str):
+    token = os.getenv("TELEGRAM_TOKEN")
+    chat_id = os.getenv("TELEGRAM_CHAT_ID")
+    if not token or not chat_id:
+        print("⚠️ TELEGRAM_TOKEN หรือ TELEGRAM_CHAT_ID ไม่ถูกตั้งค่า")
+        print(message)
+        return
+
+    url = f"https://api.telegram.org/bot{token}/sendMessage"
+    payload = {"chat_id": chat_id, "text": message}
+    try:
+        requests.post(url, data=payload)
+    except Exception as e:
+        print("Error sending to Telegram:", e)
 
 def generate_summary(log_file=LOG_FILE):
     if not os.path.exists(log_file):
-        print("❌ Log file not found:", log_file)
-        return
+        msg = f"❌ Log file not found: {log_file}"
+        print(msg)
+        return msg
 
     df = pd.read_csv(log_file)
     if df.empty or len(df) < 2:
-        print("❌ Not enough trades in log.")
-        return
+        msg = "❌ Not enough trades in log."
+        print(msg)
+        return msg
 
     # คำนวณ PnL จากคู่เทรด (entry-exit)
     df["pnl"] = 0.0
@@ -49,7 +70,7 @@ def generate_summary(log_file=LOG_FILE):
         "trades": trades,
         "wins": int(wins),
         "losses": int(losses),
-        "winrate": f"{winrate:.2f}%",
+        "winrate": round(winrate, 2),
         "total_pnl": round(total_pnl, 4),
         "avg_pnl": round(avg_pnl, 4),
         "per_symbol": per_symbol,
@@ -57,9 +78,28 @@ def generate_summary(log_file=LOG_FILE):
         "max_drawdown": round(max_drawdown, 2),
     }
 
+    # save summary
+    os.makedirs(os.path.dirname(SUMMARY_CSV), exist_ok=True)
+    pd.DataFrame([summary]).to_csv(SUMMARY_CSV, index=False)
+    with open(SUMMARY_JSON, "w") as f:
+        json.dump(summary, f, indent=4)
+
     print("\n===== Trading Performance Summary =====")
     for k, v in summary.items():
         print(f"{k}: {v}")
+    print(f"\n✅ Summary saved: {SUMMARY_CSV}, {SUMMARY_JSON}")
+
+    # ส่งไป Telegram
+    msg = (
+        "📊 Daily Summary Report\n"
+        f"รวมการเทรด: {summary['trades']}\n"
+        f"ชนะ: {summary['wins']} | แพ้: {summary['losses']}\n"
+        f"Winrate: {summary['winrate']}%\n"
+        f"กำไรรวม: {summary['total_pnl']} USDT\n"
+        f"Profit Factor: {summary['profit_factor']}\n"
+        f"Max Drawdown: {summary['max_drawdown']} USDT"
+    )
+    send_telegram_message(msg)
 
     return summary
 
