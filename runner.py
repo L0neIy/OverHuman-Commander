@@ -4,6 +4,8 @@ import time
 import pandas as pd
 from dotenv import load_dotenv
 from math import floor
+from datetime import datetime
+import pytz
 
 # --- fix path ---
 project_path = os.path.dirname(os.path.abspath(__file__))
@@ -40,23 +42,19 @@ MAX_PER_BUCKET = int(os.getenv('MAX_PER_BUCKET', '2'))
 
 # helper: map strength -> crude prob (calibrated later via backtest)
 def strength_to_prob(strength: float) -> float:
-    # gentle mapping; tune after backtest
     return max(0.45, min(0.66, 0.46 + 0.2 * strength))
 
 def pass_filters(df: pd.DataFrame, direction: int) -> bool:
-    # Trend: EMA50 vs EMA200 + ADX-ish
     if df is None or len(df) < 50:
         return False
     ema50 = df['close'].ewm(span=50).mean().iloc[-1]
     ema200 = df['close'].ewm(span=200).mean().iloc[-1]
     trend_ok = (direction > 0 and ema50 > ema200) or (direction < 0 and ema50 < ema200)
 
-    # Volatility filter (ATR normalized)
     atr = float(df.get('atr14', pd.Series([0.0])).iloc[-1] or 0.0)
     volp = atr / max(df['close'].iloc[-1], 1e-9)
     vol_ok = (0.01 <= volp <= 0.06)
 
-    # Momentum: RSI simple
     delta = df['close'].diff().fillna(0)
     up = delta.clip(lower=0).rolling(14).mean()
     down = -delta.clip(upper=0).rolling(14).mean()
@@ -67,6 +65,11 @@ def pass_filters(df: pd.DataFrame, direction: int) -> bool:
 
     return trend_ok and vol_ok and mom_ok
 
+# timezone helper
+BANGKOK = pytz.timezone("Asia/Bangkok")
+def now_thai():
+    return datetime.now(BANGKOK)
+
 def main():
     ex_name = os.getenv('EXCHANGE', CFG.data.exchange)
     api_key = os.getenv('API_KEY')
@@ -76,18 +79,16 @@ def main():
 
     symbols_env = os.getenv('SYMBOLS')
     symbols = [s.strip() for s in symbols_env.split(',')] if symbols_env else list(CFG.data.symbols)
-    # keep symbol format with slash for internal state but broker expects without slash
     symbols = [s if '/' in s else s[:-4] + '/' + s[-4:] for s in symbols]
     timeframes = ["15m", "30m", "1h"]
 
-    print(f"Commander live (multi) DryRun={dry_run} Sandbox={sandbox} Symbols={symbols} Timeframes={timeframes}")
+    logger.info(f"Commander live (multi) DryRun={dry_run} Sandbox={sandbox} Symbols={symbols} Timeframes={timeframes}")
 
     broker = CCXTBroker(ex_name, api_key, api_secret, sandbox=sandbox)
     reg = RegimeDetector(CFG.regime)
     experts = [TrendFollower(), MeanRevert(), Breakout(), TrendPullback(), VolSqueezeBreakout()]
     meta = MetaLearner(CFG.meta, [e.name for e in experts])
 
-    # risk governor config object (initial values from globals)
     risk_cfg = type("C", (), {})()
     risk_cfg.max_positions = MAX_POSITIONS
     risk_cfg.max_gross_exposure = MAX_GROSS_EXPOSURE
@@ -100,12 +101,9 @@ def main():
     risk_cfg.daily_loss_limit = float(os.getenv('DAILY_LOSS_LIMIT', '0.05')) * CAPITAL_TOTAL
 
     risk = RiskGovernor(risk_cfg)
+    autoscaler = AutoScaler(cooldown_secs=3600)
+    realized_pnl = 0.0
 
-    # autoscaler initialization
-    autoscaler = AutoScaler(cooldown_secs=3600)  # 1 hour cooldown
-    realized_pnl = 0.0   # เก็บ realized pnl (USD) จากการปิด position
-
-    # initial dynamic settings (use separate dyn_ variables)
     auto_set = autoscaler.get_settings(CAPITAL_TOTAL, force=True)
     dyn_risk_per_trade = auto_set['risk_per_trade']
     dyn_max_positions = auto_set['max_positions']
@@ -113,9 +111,19 @@ def main():
 
     state = {s: {"entry": None, "pos": 0.0, "sl": None, "tp1": None, "tp2": None} for s in symbols}
 
+    # mark day
+    risk._last_day = now_thai().strftime("%Y-%m-%d")
+
     while True:
         TF_WEIGHTS = {"15m": 0.3, "30m": 0.3, "1h": 0.4}
         try:
+            # reset daily pnl if new day
+            today_str = now_thai().strftime("%Y-%m-%d")
+            if risk._last_day != today_str:
+                logger.info(f"[Daily Reset] New day {today_str}, reset daily PnL")
+                risk.daily_pnl = 0.0
+                risk._last_day = today_str
+
             data = {}
             for s in symbols:
                 data[s] = {}
@@ -134,33 +142,29 @@ def main():
                         data[s][tf] = df
                         time.sleep(0.12)
                     except Exception as e:
-                        print(f"[fetch err] {s} {tf} ->", e)
+                        logger.error(f"[fetch err] {s} {tf} -> {e}")
                         data[s][tf] = None
 
             usable = [s for s in symbols if data.get(s, {}).get("1h") is not None]
             if not usable:
-                print("No usable symbols, sleeping...")
+                logger.warning("No usable symbols, sleeping...")
                 time.sleep(5)
                 continue
 
-            # --- autoscaler: update settings based on realized equity estimate ---
             equity_estimate = float(CAPITAL_TOTAL) + float(realized_pnl)
             auto_set = autoscaler.get_settings(equity_estimate)
             dyn_risk_per_trade = auto_set['risk_per_trade']
             dyn_max_positions = auto_set['max_positions']
             dyn_max_gross_exposure = auto_set['max_gross_exposure']
-            print(f"[AutoScaler] equity={equity_estimate:.2f} -> RISK_PER_TRADE={dyn_risk_per_trade:.4f} MAX_POSITIONS={dyn_max_positions} MAX_GROSS_EXPOSURE={dyn_max_gross_exposure:.2f}")
+            logger.info(f"[AutoScaler] eq={equity_estimate:.2f} -> RPT={dyn_risk_per_trade:.4f} MAX_POS={dyn_max_positions} MAX_GROSS={dyn_max_gross_exposure:.2f}")
 
-            # ranking + diversification as before
             ranked = rank_by_momentum({s: data[s]["1h"] for s in usable})
             tradables = pick_diversified(ranked, {s: data[s]["1h"] for s in usable},
                                          CFG.risk.top_k, CFG.risk.corr_threshold)
 
-            # build candidate list with filters and EU
             candidates = []
             for s in usable:
                 df1h = data[s]["1h"]
-                # compute tf signals as before
                 tf_signals = {}
                 for tf in timeframes:
                     df_tf = data[s].get(tf)
@@ -180,81 +184,75 @@ def main():
                 direction = 1 if combined > 0.05 else (-1 if combined < -0.05 else 0)
                 strength = min(1.0, abs(combined))
                 if direction == 0:
+                    logger.debug(f"[Filter] {s} rejected: neutral signal")
                     continue
-                # apply 3-layer filter on 1h
                 if not pass_filters(df1h, direction):
+                    logger.debug(f"[Filter] {s} rejected: filters not passed")
                     continue
                 p = strength_to_prob(strength)
                 rr = 1.5
                 eu = p * rr - (1 - p)
                 if eu <= 0:
+                    logger.debug(f"[Filter] {s} rejected: EU={eu:.2f}")
                     continue
                 candidates.append((eu, s, direction, strength))
 
-            # sort candidates by EU desc
             candidates.sort(reverse=True, key=lambda x: x[0])
 
-            # portfolio constraints and open positions
             equity = float(CAPITAL_TOTAL) + float(realized_pnl)
             open_positions = [sym for sym in symbols if state[sym]["pos"] != 0.0]
-            corr_bucket_count = {}  # implement mapping in CFG if needed
+            corr_bucket_count = {}
 
-            # iterate candidates and open until capacity
             for eu, s, direction, strength in candidates:
                 if len(open_positions) >= dyn_max_positions:
+                    logger.info(f"[Block] Skip {s}: max positions reached")
                     break
                 if s not in tradables:
+                    logger.debug(f"[Block] {s} not in tradables")
                     continue
+
                 price = float(data[s]["1h"]['close'].iloc[-1])
                 atrv = float(data[s]["1h"].get('atr14', pd.Series([0.0])).iloc[-1] or 0.0)
                 side = 'buy' if direction > 0 else 'sell'
                 k_atr = 2.0
                 sl, tp1, tp2 = compute_sl_tp(price, atrv, k_atr=k_atr, side=1 if side == 'buy' else -1)
 
-                # risk per trade: use dynamic budget and cap by dyn_risk_per_trade
                 per_slot_budget = risk.dynamic_budget()
                 positions_remaining = max(1, dyn_max_positions - len(open_positions))
                 risk_per_trade_frac = min(dyn_risk_per_trade, (MAX_RISK_PER_DAY / positions_remaining))
-                # determine qty by risk (usd)
                 qty = position_size_by_risk(equity, risk_per_trade_frac, price, sl)
-                # apply Kelly-capped factor
+
                 p = strength_to_prob(strength)
                 R = rr
                 kelly_f = max(0.0, min(0.5, (p * R - (1 - p)) / max(1e-9, R)))
                 qty *= (0.5 + kelly_f)
 
-                # round qty to market step via broker._round_amount (broker expects 'BTC/USDT' or 'BTCUSDT' depending on broker impl)
                 qty_rounded = broker._round_amount(s, qty)
                 if qty_rounded <= 0:
+                    logger.info(f"[SizeReject] {s} qty=0 after rounding")
                     continue
 
                 symbol_notional = qty_rounded * price
                 can, reason = risk.can_open(equity, s, symbol_notional, corr_bucket_count, len(open_positions))
                 if not can:
+                    logger.info(f"[RiskBlock] Skip {s} reason={reason}")
                     continue
 
                 if not dry_run:
                     order = broker.place_order(s, side, qty_rounded)
                     if order:
-                        # register
-                        state[s]['pos'] = qty_rounded if side == 'buy' else -qty_rounded
-                        state[s]['entry'] = price
-                        state[s]['sl'] = sl
-                        state[s]['tp1'] = tp1
-                        state[s]['tp2'] = tp2
+                        state[s].update({"pos": qty_rounded if side == 'buy' else -qty_rounded,
+                                         "entry": price, "sl": sl, "tp1": tp1, "tp2": tp2})
                         risk.on_open(s, symbol_notional, qty_rounded, price, sl, tp2)
                         open_positions.append(s)
+                        logger.info(f"[Order] Live {side} {s} qty={qty_rounded} price={price}")
                 else:
-                    # dry run: register in memory only
-                    state[s]['pos'] = qty_rounded if side == 'buy' else -qty_rounded
-                    state[s]['entry'] = price
-                    state[s]['sl'] = sl
-                    state[s]['tp1'] = tp1
-                    state[s]['tp2'] = tp2
+                    state[s].update({"pos": qty_rounded if side == 'buy' else -qty_rounded,
+                                     "entry": price, "sl": sl, "tp1": tp1, "tp2": tp2})
                     risk.on_open(s, symbol_notional, qty_rounded, price, sl, tp2)
                     open_positions.append(s)
+                    logger.info(f"[Order] DryRun {side} {s} qty={qty_rounded} price={price}")
 
-            # --- manage open positions: SL -> BE -> trailing -> close ---
             for s in list(open_positions):
                 if state[s]['pos'] == 0.0:
                     continue
@@ -263,13 +261,11 @@ def main():
                 entry = state[s]['entry']
                 sl = state[s]['sl']
                 tp2 = state[s]['tp2']
-                # compute R distance
+
                 r = (price - entry) * side_sign
                 oneR = abs(entry - sl)
-                # set BE at 1R
                 if oneR > 0 and r >= oneR and sl != entry:
                     state[s]['sl'] = entry
-                # trailing after tp1 (we used tp1 ~1.5R)
                 if r >= oneR * 1.5:
                     atr_now = float(data[s]['1h'].get('atr14', pd.Series([0.0])).iloc[-1] or 0.0)
                     trail = 1.2 * atr_now
@@ -278,7 +274,7 @@ def main():
                         state[s]['sl'] = max(state[s]['sl'], new_sl)
                     else:
                         state[s]['sl'] = min(state[s]['sl'], new_sl)
-                # check exit by SL or TP2
+
                 exit_now = False
                 if side_sign > 0 and price <= state[s]['sl']:
                     exit_now = True
@@ -291,21 +287,19 @@ def main():
 
                 if exit_now:
                     if not dry_run:
-                        # reduceOnly close full
                         broker.place_order(s, 'sell' if side_sign > 0 else 'buy', abs(state[s]['pos']))
                     pnl_usd = (price - entry) * side_sign * abs(state[s]['pos'])
-                    # register realized pnl and notify risk
                     realized_pnl += pnl_usd
                     risk.register_pnl(pnl_usd)
                     risk.on_close(s)
+                    logger.info(f"[Exit] {s} pnl={pnl_usd:.2f}")
                     state[s].update({"pos": 0.0, "entry": None, "sl": None, "tp1": None, "tp2": None})
                     try:
                         open_positions.remove(s)
                     except ValueError:
                         pass
-                    risk.set_cooldown(s, 1800)  # 30 min
+                    risk.set_cooldown(s, 1800)
 
-            # print summary
             summaries = []
             for s in symbols:
                 pos = state[s]['pos']
@@ -314,11 +308,11 @@ def main():
                 size = abs(pos)
                 price = float(data[s]['1h']['close'].iloc[-1]) if data[s]['1h'] is not None else 0.0
                 summaries.append(f"{s}: price={price:.2f} pos={pos:.6f} entry={entry:.2f} sl={sl:.2f} size={size:.6f}")
-            print(" | ".join(summaries))
+            logger.info(" | ".join(summaries))
             time.sleep(5)
 
         except Exception as e:
-            print("Runner error:", e)
+            logger.error(f"Runner error: {e}")
             time.sleep(5)
 
 if __name__ == "__main__":

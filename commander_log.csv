@@ -1,1 +1,434 @@
 timestamp,symbol,position,entry_price,direction,strength,order_side,order_size,reason,pnl_daily
+2025-09-21 09:13:40,,,,,,,,,,INFO,"Commander live (multi) DryRun=True Sandbox=True Symbols=['BTC/USDT', 'ETH/USDT', 'BNB/USDT', 'SOL/USDT', 'ADA/USDT', 'XRP/USDT', 'LTC/USDT', 'DOGE/USDT', 'LINK/USDT', 'BCH/USDT'] Timeframes=['15m', '30m', '1h']"
+2025-09-21 09:13:57,,,,,,,,,,INFO,[AutoScaler] eq=1000.00 -> RPT=0.0080 MAX_POS=3 MAX_GROSS=0.30
+2025-09-21 09:13:57,,,,,,,,,,DEBUG,[Filter] BTC/USDT rejected: filters not passed
+2025-09-21 09:13:57,,,,,,,,,,DEBUG,[Filter] ETH/USDT rejected: filters not passed
+2025-09-21 09:13:58,,,,,,,,,,DEBUG,[Filter] SOL/USDT rejected: filters not passed
+2025-09-21 09:13:58,,,,,,,,,,DEBUG,[Filter] ADA/USDT rejected: filters not passed
+2025-09-21 09:13:58,,,,,,,,,,DEBUG,[Filter] XRP/USDT rejected: filters not passed
+2025-09-21 09:13:58,,,,,,,,,,DEBUG,[Filter] LTC/USDT rejected: filters not passed
+2025-09-21 09:13:58,,,,,,,,,,DEBUG,[Filter] LINK/USDT rejected: filters not passed
+2025-09-21 09:13:58,,,,,,,,,,DEBUG,[Filter] BCH/USDT rejected: filters not passed
+2025-09-21 09:13:58,,,,,,,,,,INFO,[Order] DryRun buy DOGE/USDT qty=305.0 price=0.26829
+2025-09-21 09:13:58,,,,,,,,,,INFO,[SizeReject] BNB/USDT qty=0 after rounding
+2025-09-21 09:13:58,,,,,,,,,,INFO,BTC/USDT: price=115623.30 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ETH/USDT: price=4495.00 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BNB/USDT: price=1077.83 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | SOL/USDT: price=240.62 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ADA/USDT: price=0.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | XRP/USDT: price=2.98 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | LTC/USDT: price=114.33 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | DOGE/USDT: price=0.27 pos=305.000000 entry=0.27 sl=0.25 size=305.000000 | LINK/USDT: price=23.37 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BCH/USDT: price=597.48 pos=0.000000 entry=0.00 sl=0.00 size=0.000000
+2025-09-21 09:14:20,,,,,,,,,,INFO,[AutoScaler] eq=1000.00 -> RPT=0.0080 MAX_POS=3 MAX_GROSS=0.30
+2025-09-21 09:14:20,,,,,,,,,,DEBUG,[Filter] BTC/USDT rejected: filters not passed
+2025-09-21 09:14:20,,,,,,,,,,DEBUG,[Filter] ETH/USDT rejected: filters not passed
+2025-09-21 09:14:20,,,,,,,,,,DEBUG,[Filter] SOL/USDT rejected: filters not passed
+2025-09-21 09:14:20,,,,,,,,,,DEBUG,[Filter] ADA/USDT rejected: filters not passed
+2025-09-21 09:14:20,,,,,,,,,,DEBUG,[Filter] XRP/USDT rejected: filters not passed
+2025-09-21 09:14:20,,,,,,,,,,DEBUG,[Filter] LTC/USDT rejected: filters not passed
+2025-09-21 09:14:20,,,,,,,,,,DEBUG,[Filter] LINK/USDT rejected: filters not passed
+2025-09-21 09:14:20,,,,,,,,,,DEBUG,[Filter] BCH/USDT rejected: filters not passed
+2025-09-21 09:14:20,,,,,,,,,,INFO,[Order] DryRun buy DOGE/USDT qty=366.0 price=0.26829
+2025-09-21 09:14:20,,,,,,,,,,INFO,[SizeReject] BNB/USDT qty=0 after rounding
+2025-09-21 09:14:20,,,,,,,,,,INFO,BTC/USDT: price=115623.30 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ETH/USDT: price=4499.23 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BNB/USDT: price=1077.83 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | SOL/USDT: price=240.72 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ADA/USDT: price=0.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | XRP/USDT: price=2.98 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | LTC/USDT: price=114.33 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | DOGE/USDT: price=0.27 pos=366.000000 entry=0.27 sl=0.25 size=366.000000 | LINK/USDT: price=23.37 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BCH/USDT: price=597.57 pos=0.000000 entry=0.00 sl=0.00 size=0.000000
+2025-09-21 09:14:44,,,,,,,,,,INFO,[AutoScaler] eq=1000.00 -> RPT=0.0080 MAX_POS=3 MAX_GROSS=0.30
+2025-09-21 09:14:44,,,,,,,,,,DEBUG,[Filter] BTC/USDT rejected: filters not passed
+2025-09-21 09:14:44,,,,,,,,,,DEBUG,[Filter] SOL/USDT rejected: filters not passed
+2025-09-21 09:14:44,,,,,,,,,,DEBUG,[Filter] ADA/USDT rejected: filters not passed
+2025-09-21 09:14:44,,,,,,,,,,DEBUG,[Filter] XRP/USDT rejected: filters not passed
+2025-09-21 09:14:44,,,,,,,,,,DEBUG,[Filter] LTC/USDT rejected: filters not passed
+2025-09-21 09:14:44,,,,,,,,,,DEBUG,[Filter] LINK/USDT rejected: filters not passed
+2025-09-21 09:14:44,,,,,,,,,,DEBUG,[Filter] BCH/USDT rejected: filters not passed
+2025-09-21 09:14:44,,,,,,,,,,INFO,[SizeReject] ETH/USDT qty=0 after rounding
+2025-09-21 09:14:44,,,,,,,,,,INFO,[Order] DryRun buy DOGE/USDT qty=366.0 price=0.26829
+2025-09-21 09:14:44,,,,,,,,,,INFO,[SizeReject] BNB/USDT qty=0 after rounding
+2025-09-21 09:14:44,,,,,,,,,,INFO,BTC/USDT: price=115524.10 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ETH/USDT: price=4599.00 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BNB/USDT: price=1078.00 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | SOL/USDT: price=240.77 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ADA/USDT: price=0.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | XRP/USDT: price=2.98 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | LTC/USDT: price=114.31 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | DOGE/USDT: price=0.27 pos=366.000000 entry=0.27 sl=0.25 size=366.000000 | LINK/USDT: price=23.37 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BCH/USDT: price=597.63 pos=0.000000 entry=0.00 sl=0.00 size=0.000000
+2025-09-21 09:15:07,,,,,,,,,,INFO,[AutoScaler] eq=1000.00 -> RPT=0.0080 MAX_POS=3 MAX_GROSS=0.30
+2025-09-21 09:15:09,,,,,,,,,,DEBUG,[Filter] BTC/USDT rejected: filters not passed
+2025-09-21 09:15:09,,,,,,,,,,DEBUG,[Filter] SOL/USDT rejected: filters not passed
+2025-09-21 09:15:09,,,,,,,,,,DEBUG,[Filter] ADA/USDT rejected: filters not passed
+2025-09-21 09:15:09,,,,,,,,,,DEBUG,[Filter] XRP/USDT rejected: filters not passed
+2025-09-21 09:15:09,,,,,,,,,,DEBUG,[Filter] LTC/USDT rejected: filters not passed
+2025-09-21 09:15:09,,,,,,,,,,DEBUG,[Filter] LINK/USDT rejected: filters not passed
+2025-09-21 09:15:09,,,,,,,,,,DEBUG,[Filter] BCH/USDT rejected: filters not passed
+2025-09-21 09:15:09,,,,,,,,,,INFO,[SizeReject] ETH/USDT qty=0 after rounding
+2025-09-21 09:15:09,,,,,,,,,,INFO,[Order] DryRun buy DOGE/USDT qty=366.0 price=0.26829
+2025-09-21 09:15:09,,,,,,,,,,INFO,[SizeReject] BNB/USDT qty=0 after rounding
+2025-09-21 09:15:09,,,,,,,,,,INFO,BTC/USDT: price=115773.70 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ETH/USDT: price=4599.00 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BNB/USDT: price=1078.00 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | SOL/USDT: price=240.73 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ADA/USDT: price=0.89 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | XRP/USDT: price=2.98 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | LTC/USDT: price=114.29 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | DOGE/USDT: price=0.27 pos=366.000000 entry=0.27 sl=0.25 size=366.000000 | LINK/USDT: price=23.37 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BCH/USDT: price=597.59 pos=0.000000 entry=0.00 sl=0.00 size=0.000000
+2025-09-21 09:15:35,,,,,,,,,,INFO,[AutoScaler] eq=1000.00 -> RPT=0.0080 MAX_POS=3 MAX_GROSS=0.30
+2025-09-21 09:15:35,,,,,,,,,,DEBUG,[Filter] BTC/USDT rejected: filters not passed
+2025-09-21 09:15:35,,,,,,,,,,DEBUG,[Filter] ETH/USDT rejected: filters not passed
+2025-09-21 09:15:35,,,,,,,,,,DEBUG,[Filter] SOL/USDT rejected: filters not passed
+2025-09-21 09:15:35,,,,,,,,,,DEBUG,[Filter] ADA/USDT rejected: filters not passed
+2025-09-21 09:15:35,,,,,,,,,,DEBUG,[Filter] XRP/USDT rejected: filters not passed
+2025-09-21 09:15:35,,,,,,,,,,DEBUG,[Filter] LTC/USDT rejected: filters not passed
+2025-09-21 09:15:35,,,,,,,,,,DEBUG,[Filter] LINK/USDT rejected: filters not passed
+2025-09-21 09:15:35,,,,,,,,,,DEBUG,[Filter] BCH/USDT rejected: filters not passed
+2025-09-21 09:15:35,,,,,,,,,,INFO,[RiskBlock] Skip DOGE/USDT reason=gross-exposure
+2025-09-21 09:15:35,,,,,,,,,,INFO,[SizeReject] BNB/USDT qty=0 after rounding
+2025-09-21 09:15:35,,,,,,,,,,INFO,BTC/USDT: price=115850.80 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ETH/USDT: price=4495.00 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BNB/USDT: price=1077.83 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | SOL/USDT: price=240.77 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ADA/USDT: price=0.89 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | XRP/USDT: price=2.98 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | LTC/USDT: price=114.33 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | DOGE/USDT: price=0.27 pos=366.000000 entry=0.27 sl=0.25 size=366.000000 | LINK/USDT: price=23.37 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BCH/USDT: price=597.76 pos=0.000000 entry=0.00 sl=0.00 size=0.000000
+2025-09-21 09:15:59,,,,,,,,,,INFO,[AutoScaler] eq=1000.00 -> RPT=0.0080 MAX_POS=3 MAX_GROSS=0.30
+2025-09-21 09:15:59,,,,,,,,,,DEBUG,[Filter] BTC/USDT rejected: filters not passed
+2025-09-21 09:15:59,,,,,,,,,,DEBUG,[Filter] ETH/USDT rejected: filters not passed
+2025-09-21 09:15:59,,,,,,,,,,DEBUG,[Filter] SOL/USDT rejected: filters not passed
+2025-09-21 09:15:59,,,,,,,,,,DEBUG,[Filter] ADA/USDT rejected: filters not passed
+2025-09-21 09:15:59,,,,,,,,,,DEBUG,[Filter] XRP/USDT rejected: filters not passed
+2025-09-21 09:15:59,,,,,,,,,,DEBUG,[Filter] LTC/USDT rejected: filters not passed
+2025-09-21 09:15:59,,,,,,,,,,DEBUG,[Filter] LINK/USDT rejected: filters not passed
+2025-09-21 09:15:59,,,,,,,,,,DEBUG,[Filter] BCH/USDT rejected: filters not passed
+2025-09-21 09:15:59,,,,,,,,,,INFO,[RiskBlock] Skip DOGE/USDT reason=gross-exposure
+2025-09-21 09:15:59,,,,,,,,,,INFO,[SizeReject] BNB/USDT qty=0 after rounding
+2025-09-21 09:15:59,,,,,,,,,,INFO,BTC/USDT: price=115850.80 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ETH/USDT: price=4495.00 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BNB/USDT: price=1077.83 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | SOL/USDT: price=240.75 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ADA/USDT: price=0.89 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | XRP/USDT: price=2.98 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | LTC/USDT: price=114.29 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | DOGE/USDT: price=0.27 pos=366.000000 entry=0.27 sl=0.25 size=366.000000 | LINK/USDT: price=23.37 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BCH/USDT: price=597.59 pos=0.000000 entry=0.00 sl=0.00 size=0.000000
+2025-09-21 09:16:21,,,,,,,,,,INFO,[AutoScaler] eq=1000.00 -> RPT=0.0080 MAX_POS=3 MAX_GROSS=0.30
+2025-09-21 09:16:21,,,,,,,,,,DEBUG,[Filter] BTC/USDT rejected: filters not passed
+2025-09-21 09:16:21,,,,,,,,,,DEBUG,[Filter] ETH/USDT rejected: filters not passed
+2025-09-21 09:16:21,,,,,,,,,,DEBUG,[Filter] SOL/USDT rejected: filters not passed
+2025-09-21 09:16:21,,,,,,,,,,DEBUG,[Filter] ADA/USDT rejected: filters not passed
+2025-09-21 09:16:21,,,,,,,,,,DEBUG,[Filter] XRP/USDT rejected: filters not passed
+2025-09-21 09:16:21,,,,,,,,,,DEBUG,[Filter] LTC/USDT rejected: filters not passed
+2025-09-21 09:16:21,,,,,,,,,,DEBUG,[Filter] LINK/USDT rejected: filters not passed
+2025-09-21 09:16:21,,,,,,,,,,DEBUG,[Filter] BCH/USDT rejected: filters not passed
+2025-09-21 09:16:21,,,,,,,,,,INFO,[RiskBlock] Skip DOGE/USDT reason=gross-exposure
+2025-09-21 09:16:21,,,,,,,,,,INFO,[SizeReject] BNB/USDT qty=0 after rounding
+2025-09-21 09:16:21,,,,,,,,,,INFO,BTC/USDT: price=115635.50 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ETH/USDT: price=4502.41 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BNB/USDT: price=1077.83 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | SOL/USDT: price=240.78 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ADA/USDT: price=0.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | XRP/USDT: price=2.98 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | LTC/USDT: price=114.33 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | DOGE/USDT: price=0.27 pos=366.000000 entry=0.27 sl=0.25 size=366.000000 | LINK/USDT: price=23.39 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BCH/USDT: price=597.59 pos=0.000000 entry=0.00 sl=0.00 size=0.000000
+2025-09-21 09:16:44,,,,,,,,,,INFO,[AutoScaler] eq=1000.00 -> RPT=0.0080 MAX_POS=3 MAX_GROSS=0.30
+2025-09-21 09:16:44,,,,,,,,,,DEBUG,[Filter] BTC/USDT rejected: filters not passed
+2025-09-21 09:16:44,,,,,,,,,,DEBUG,[Filter] SOL/USDT rejected: filters not passed
+2025-09-21 09:16:44,,,,,,,,,,DEBUG,[Filter] ADA/USDT rejected: filters not passed
+2025-09-21 09:16:44,,,,,,,,,,DEBUG,[Filter] XRP/USDT rejected: filters not passed
+2025-09-21 09:16:44,,,,,,,,,,DEBUG,[Filter] LTC/USDT rejected: filters not passed
+2025-09-21 09:16:44,,,,,,,,,,DEBUG,[Filter] LINK/USDT rejected: filters not passed
+2025-09-21 09:16:44,,,,,,,,,,DEBUG,[Filter] BCH/USDT rejected: filters not passed
+2025-09-21 09:16:44,,,,,,,,,,INFO,[SizeReject] ETH/USDT qty=0 after rounding
+2025-09-21 09:16:44,,,,,,,,,,INFO,[RiskBlock] Skip DOGE/USDT reason=gross-exposure
+2025-09-21 09:16:44,,,,,,,,,,INFO,[SizeReject] BNB/USDT qty=0 after rounding
+2025-09-21 09:16:44,,,,,,,,,,INFO,BTC/USDT: price=115635.50 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ETH/USDT: price=4599.00 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BNB/USDT: price=1077.83 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | SOL/USDT: price=240.78 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ADA/USDT: price=0.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | XRP/USDT: price=2.98 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | LTC/USDT: price=114.34 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | DOGE/USDT: price=0.27 pos=366.000000 entry=0.27 sl=0.25 size=366.000000 | LINK/USDT: price=23.39 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BCH/USDT: price=597.65 pos=0.000000 entry=0.00 sl=0.00 size=0.000000
+2025-09-21 09:17:02,,,,,,,,,,INFO,[AutoScaler] eq=1000.00 -> RPT=0.0080 MAX_POS=3 MAX_GROSS=0.30
+2025-09-21 09:17:03,,,,,,,,,,DEBUG,[Filter] BTC/USDT rejected: filters not passed
+2025-09-21 09:17:03,,,,,,,,,,DEBUG,[Filter] SOL/USDT rejected: filters not passed
+2025-09-21 09:17:03,,,,,,,,,,DEBUG,[Filter] ADA/USDT rejected: filters not passed
+2025-09-21 09:17:03,,,,,,,,,,DEBUG,[Filter] XRP/USDT rejected: filters not passed
+2025-09-21 09:17:03,,,,,,,,,,DEBUG,[Filter] LTC/USDT rejected: filters not passed
+2025-09-21 09:17:03,,,,,,,,,,DEBUG,[Filter] LINK/USDT rejected: filters not passed
+2025-09-21 09:17:03,,,,,,,,,,DEBUG,[Filter] BCH/USDT rejected: filters not passed
+2025-09-21 09:17:03,,,,,,,,,,INFO,[SizeReject] ETH/USDT qty=0 after rounding
+2025-09-21 09:17:03,,,,,,,,,,INFO,[RiskBlock] Skip DOGE/USDT reason=gross-exposure
+2025-09-21 09:17:03,,,,,,,,,,INFO,[SizeReject] BNB/USDT qty=0 after rounding
+2025-09-21 09:17:03,,,,,,,,,,INFO,BTC/USDT: price=115623.30 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ETH/USDT: price=4599.00 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BNB/USDT: price=1077.83 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | SOL/USDT: price=240.87 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ADA/USDT: price=0.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | XRP/USDT: price=2.98 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | LTC/USDT: price=114.35 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | DOGE/USDT: price=0.27 pos=366.000000 entry=0.27 sl=0.25 size=366.000000 | LINK/USDT: price=23.39 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BCH/USDT: price=597.65 pos=0.000000 entry=0.00 sl=0.00 size=0.000000
+2025-09-21 09:17:20,,,,,,,,,,INFO,[AutoScaler] eq=1000.00 -> RPT=0.0080 MAX_POS=3 MAX_GROSS=0.30
+2025-09-21 09:17:20,,,,,,,,,,DEBUG,[Filter] BTC/USDT rejected: filters not passed
+2025-09-21 09:17:20,,,,,,,,,,DEBUG,[Filter] SOL/USDT rejected: filters not passed
+2025-09-21 09:17:20,,,,,,,,,,DEBUG,[Filter] ADA/USDT rejected: filters not passed
+2025-09-21 09:17:20,,,,,,,,,,DEBUG,[Filter] XRP/USDT rejected: filters not passed
+2025-09-21 09:17:20,,,,,,,,,,DEBUG,[Filter] LTC/USDT rejected: filters not passed
+2025-09-21 09:17:20,,,,,,,,,,DEBUG,[Filter] LINK/USDT rejected: filters not passed
+2025-09-21 09:17:20,,,,,,,,,,DEBUG,[Filter] BCH/USDT rejected: filters not passed
+2025-09-21 09:17:20,,,,,,,,,,INFO,[SizeReject] ETH/USDT qty=0 after rounding
+2025-09-21 09:17:20,,,,,,,,,,INFO,[RiskBlock] Skip DOGE/USDT reason=gross-exposure
+2025-09-21 09:17:20,,,,,,,,,,INFO,[SizeReject] BNB/USDT qty=0 after rounding
+2025-09-21 09:17:20,,,,,,,,,,INFO,BTC/USDT: price=115636.40 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ETH/USDT: price=4599.00 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BNB/USDT: price=1078.92 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | SOL/USDT: price=240.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ADA/USDT: price=0.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | XRP/USDT: price=2.98 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | LTC/USDT: price=114.35 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | DOGE/USDT: price=0.27 pos=366.000000 entry=0.27 sl=0.25 size=366.000000 | LINK/USDT: price=23.38 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BCH/USDT: price=597.63 pos=0.000000 entry=0.00 sl=0.00 size=0.000000
+2025-09-21 09:17:43,,,,,,,,,,INFO,[AutoScaler] eq=1000.00 -> RPT=0.0080 MAX_POS=3 MAX_GROSS=0.30
+2025-09-21 09:17:43,,,,,,,,,,DEBUG,[Filter] BTC/USDT rejected: filters not passed
+2025-09-21 09:17:43,,,,,,,,,,DEBUG,[Filter] ETH/USDT rejected: filters not passed
+2025-09-21 09:17:43,,,,,,,,,,DEBUG,[Filter] SOL/USDT rejected: filters not passed
+2025-09-21 09:17:43,,,,,,,,,,DEBUG,[Filter] ADA/USDT rejected: filters not passed
+2025-09-21 09:17:43,,,,,,,,,,DEBUG,[Filter] XRP/USDT rejected: filters not passed
+2025-09-21 09:17:43,,,,,,,,,,DEBUG,[Filter] LTC/USDT rejected: filters not passed
+2025-09-21 09:17:43,,,,,,,,,,DEBUG,[Filter] LINK/USDT rejected: filters not passed
+2025-09-21 09:17:43,,,,,,,,,,DEBUG,[Filter] BCH/USDT rejected: filters not passed
+2025-09-21 09:17:43,,,,,,,,,,INFO,[RiskBlock] Skip DOGE/USDT reason=gross-exposure
+2025-09-21 09:17:43,,,,,,,,,,INFO,[SizeReject] BNB/USDT qty=0 after rounding
+2025-09-21 09:17:43,,,,,,,,,,INFO,BTC/USDT: price=115635.50 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ETH/USDT: price=4530.18 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BNB/USDT: price=1079.06 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | SOL/USDT: price=240.79 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ADA/USDT: price=0.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | XRP/USDT: price=2.98 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | LTC/USDT: price=114.23 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | DOGE/USDT: price=0.27 pos=366.000000 entry=0.27 sl=0.25 size=366.000000 | LINK/USDT: price=23.36 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BCH/USDT: price=597.28 pos=0.000000 entry=0.00 sl=0.00 size=0.000000
+2025-09-21 09:18:07,,,,,,,,,,INFO,[AutoScaler] eq=1000.00 -> RPT=0.0080 MAX_POS=3 MAX_GROSS=0.30
+2025-09-21 09:18:07,,,,,,,,,,DEBUG,[Filter] BTC/USDT rejected: filters not passed
+2025-09-21 09:18:07,,,,,,,,,,DEBUG,[Filter] SOL/USDT rejected: filters not passed
+2025-09-21 09:18:07,,,,,,,,,,DEBUG,[Filter] ADA/USDT rejected: filters not passed
+2025-09-21 09:18:07,,,,,,,,,,DEBUG,[Filter] XRP/USDT rejected: filters not passed
+2025-09-21 09:18:07,,,,,,,,,,DEBUG,[Filter] LTC/USDT rejected: filters not passed
+2025-09-21 09:18:07,,,,,,,,,,DEBUG,[Filter] LINK/USDT rejected: filters not passed
+2025-09-21 09:18:07,,,,,,,,,,DEBUG,[Filter] BCH/USDT rejected: filters not passed
+2025-09-21 09:18:07,,,,,,,,,,INFO,[RiskBlock] Skip DOGE/USDT reason=gross-exposure
+2025-09-21 09:18:07,,,,,,,,,,INFO,[SizeReject] BNB/USDT qty=0 after rounding
+2025-09-21 09:18:07,,,,,,,,,,INFO,[SizeReject] ETH/USDT qty=0 after rounding
+2025-09-21 09:18:07,,,,,,,,,,INFO,BTC/USDT: price=115531.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ETH/USDT: price=4577.41 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BNB/USDT: price=1078.58 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | SOL/USDT: price=240.76 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ADA/USDT: price=0.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | XRP/USDT: price=2.98 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | LTC/USDT: price=114.22 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | DOGE/USDT: price=0.27 pos=366.000000 entry=0.27 sl=0.25 size=366.000000 | LINK/USDT: price=23.35 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BCH/USDT: price=597.28 pos=0.000000 entry=0.00 sl=0.00 size=0.000000
+2025-09-21 09:18:28,,,,,,,,,,INFO,[AutoScaler] eq=1000.00 -> RPT=0.0080 MAX_POS=3 MAX_GROSS=0.30
+2025-09-21 09:18:28,,,,,,,,,,DEBUG,[Filter] BTC/USDT rejected: filters not passed
+2025-09-21 09:18:28,,,,,,,,,,DEBUG,[Filter] ETH/USDT rejected: filters not passed
+2025-09-21 09:18:28,,,,,,,,,,DEBUG,[Filter] SOL/USDT rejected: filters not passed
+2025-09-21 09:18:28,,,,,,,,,,DEBUG,[Filter] ADA/USDT rejected: filters not passed
+2025-09-21 09:18:28,,,,,,,,,,DEBUG,[Filter] XRP/USDT rejected: filters not passed
+2025-09-21 09:18:28,,,,,,,,,,DEBUG,[Filter] LTC/USDT rejected: filters not passed
+2025-09-21 09:18:28,,,,,,,,,,DEBUG,[Filter] LINK/USDT rejected: filters not passed
+2025-09-21 09:18:28,,,,,,,,,,DEBUG,[Filter] BCH/USDT rejected: filters not passed
+2025-09-21 09:18:28,,,,,,,,,,INFO,[RiskBlock] Skip DOGE/USDT reason=gross-exposure
+2025-09-21 09:18:28,,,,,,,,,,INFO,[SizeReject] BNB/USDT qty=0 after rounding
+2025-09-21 09:18:28,,,,,,,,,,INFO,BTC/USDT: price=115531.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ETH/USDT: price=4495.00 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BNB/USDT: price=1079.16 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | SOL/USDT: price=240.71 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ADA/USDT: price=0.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | XRP/USDT: price=2.98 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | LTC/USDT: price=114.06 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | DOGE/USDT: price=0.27 pos=366.000000 entry=0.27 sl=0.25 size=366.000000 | LINK/USDT: price=23.30 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BCH/USDT: price=596.69 pos=0.000000 entry=0.00 sl=0.00 size=0.000000
+2025-09-21 09:18:50,,,,,,,,,,INFO,[AutoScaler] eq=1000.00 -> RPT=0.0080 MAX_POS=3 MAX_GROSS=0.30
+2025-09-21 09:18:50,,,,,,,,,,DEBUG,[Filter] BTC/USDT rejected: filters not passed
+2025-09-21 09:18:50,,,,,,,,,,DEBUG,[Filter] ETH/USDT rejected: filters not passed
+2025-09-21 09:18:50,,,,,,,,,,DEBUG,[Filter] SOL/USDT rejected: filters not passed
+2025-09-21 09:18:50,,,,,,,,,,DEBUG,[Filter] ADA/USDT rejected: filters not passed
+2025-09-21 09:18:50,,,,,,,,,,DEBUG,[Filter] XRP/USDT rejected: filters not passed
+2025-09-21 09:18:50,,,,,,,,,,DEBUG,[Filter] LTC/USDT rejected: filters not passed
+2025-09-21 09:18:50,,,,,,,,,,DEBUG,[Filter] LINK/USDT rejected: filters not passed
+2025-09-21 09:18:50,,,,,,,,,,DEBUG,[Filter] BCH/USDT rejected: filters not passed
+2025-09-21 09:18:50,,,,,,,,,,INFO,[RiskBlock] Skip DOGE/USDT reason=gross-exposure
+2025-09-21 09:18:50,,,,,,,,,,INFO,[SizeReject] BNB/USDT qty=0 after rounding
+2025-09-21 09:18:50,,,,,,,,,,INFO,BTC/USDT: price=115442.30 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ETH/USDT: price=4495.00 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BNB/USDT: price=1079.16 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | SOL/USDT: price=240.66 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ADA/USDT: price=0.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | XRP/USDT: price=2.98 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | LTC/USDT: price=114.08 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | DOGE/USDT: price=0.27 pos=366.000000 entry=0.27 sl=0.25 size=366.000000 | LINK/USDT: price=23.32 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BCH/USDT: price=597.01 pos=0.000000 entry=0.00 sl=0.00 size=0.000000
+2025-09-21 09:19:10,,,,,,,,,,INFO,[AutoScaler] eq=1000.00 -> RPT=0.0080 MAX_POS=3 MAX_GROSS=0.30
+2025-09-21 09:19:10,,,,,,,,,,DEBUG,[Filter] BTC/USDT rejected: filters not passed
+2025-09-21 09:19:10,,,,,,,,,,DEBUG,[Filter] ETH/USDT rejected: filters not passed
+2025-09-21 09:19:10,,,,,,,,,,DEBUG,[Filter] SOL/USDT rejected: filters not passed
+2025-09-21 09:19:10,,,,,,,,,,DEBUG,[Filter] ADA/USDT rejected: filters not passed
+2025-09-21 09:19:10,,,,,,,,,,DEBUG,[Filter] XRP/USDT rejected: filters not passed
+2025-09-21 09:19:10,,,,,,,,,,DEBUG,[Filter] LTC/USDT rejected: filters not passed
+2025-09-21 09:19:10,,,,,,,,,,DEBUG,[Filter] LINK/USDT rejected: filters not passed
+2025-09-21 09:19:10,,,,,,,,,,DEBUG,[Filter] BCH/USDT rejected: filters not passed
+2025-09-21 09:19:10,,,,,,,,,,INFO,[RiskBlock] Skip DOGE/USDT reason=gross-exposure
+2025-09-21 09:19:10,,,,,,,,,,INFO,[SizeReject] BNB/USDT qty=0 after rounding
+2025-09-21 09:19:10,,,,,,,,,,INFO,BTC/USDT: price=115442.30 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ETH/USDT: price=4495.00 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BNB/USDT: price=1079.16 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | SOL/USDT: price=240.63 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ADA/USDT: price=0.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | XRP/USDT: price=2.98 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | LTC/USDT: price=114.08 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | DOGE/USDT: price=0.27 pos=366.000000 entry=0.27 sl=0.25 size=366.000000 | LINK/USDT: price=23.31 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BCH/USDT: price=597.03 pos=0.000000 entry=0.00 sl=0.00 size=0.000000
+2025-09-21 09:19:30,,,,,,,,,,INFO,[AutoScaler] eq=1000.00 -> RPT=0.0080 MAX_POS=3 MAX_GROSS=0.30
+2025-09-21 09:19:30,,,,,,,,,,DEBUG,[Filter] BTC/USDT rejected: filters not passed
+2025-09-21 09:19:30,,,,,,,,,,DEBUG,[Filter] ETH/USDT rejected: filters not passed
+2025-09-21 09:19:30,,,,,,,,,,DEBUG,[Filter] SOL/USDT rejected: filters not passed
+2025-09-21 09:19:30,,,,,,,,,,DEBUG,[Filter] ADA/USDT rejected: filters not passed
+2025-09-21 09:19:30,,,,,,,,,,DEBUG,[Filter] XRP/USDT rejected: filters not passed
+2025-09-21 09:19:30,,,,,,,,,,DEBUG,[Filter] LTC/USDT rejected: filters not passed
+2025-09-21 09:19:30,,,,,,,,,,DEBUG,[Filter] LINK/USDT rejected: filters not passed
+2025-09-21 09:19:30,,,,,,,,,,DEBUG,[Filter] BCH/USDT rejected: filters not passed
+2025-09-21 09:19:30,,,,,,,,,,INFO,[RiskBlock] Skip DOGE/USDT reason=gross-exposure
+2025-09-21 09:19:30,,,,,,,,,,INFO,[SizeReject] BNB/USDT qty=0 after rounding
+2025-09-21 09:19:30,,,,,,,,,,INFO,BTC/USDT: price=115442.30 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ETH/USDT: price=4495.00 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BNB/USDT: price=1079.16 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | SOL/USDT: price=240.54 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ADA/USDT: price=0.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | XRP/USDT: price=2.98 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | LTC/USDT: price=114.09 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | DOGE/USDT: price=0.27 pos=366.000000 entry=0.27 sl=0.25 size=366.000000 | LINK/USDT: price=23.31 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BCH/USDT: price=597.12 pos=0.000000 entry=0.00 sl=0.00 size=0.000000
+2025-09-21 09:19:50,,,,,,,,,,INFO,[AutoScaler] eq=1000.00 -> RPT=0.0080 MAX_POS=3 MAX_GROSS=0.30
+2025-09-21 09:19:50,,,,,,,,,,DEBUG,[Filter] BTC/USDT rejected: filters not passed
+2025-09-21 09:19:50,,,,,,,,,,DEBUG,[Filter] ETH/USDT rejected: filters not passed
+2025-09-21 09:19:50,,,,,,,,,,DEBUG,[Filter] SOL/USDT rejected: filters not passed
+2025-09-21 09:19:50,,,,,,,,,,DEBUG,[Filter] ADA/USDT rejected: filters not passed
+2025-09-21 09:19:50,,,,,,,,,,DEBUG,[Filter] XRP/USDT rejected: filters not passed
+2025-09-21 09:19:50,,,,,,,,,,DEBUG,[Filter] LTC/USDT rejected: filters not passed
+2025-09-21 09:19:50,,,,,,,,,,DEBUG,[Filter] LINK/USDT rejected: filters not passed
+2025-09-21 09:19:50,,,,,,,,,,DEBUG,[Filter] BCH/USDT rejected: filters not passed
+2025-09-21 09:19:50,,,,,,,,,,INFO,[RiskBlock] Skip DOGE/USDT reason=gross-exposure
+2025-09-21 09:19:50,,,,,,,,,,INFO,[SizeReject] BNB/USDT qty=0 after rounding
+2025-09-21 09:19:50,,,,,,,,,,INFO,BTC/USDT: price=115442.30 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ETH/USDT: price=4495.00 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BNB/USDT: price=1078.58 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | SOL/USDT: price=240.48 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ADA/USDT: price=0.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | XRP/USDT: price=2.98 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | LTC/USDT: price=114.09 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | DOGE/USDT: price=0.27 pos=366.000000 entry=0.27 sl=0.25 size=366.000000 | LINK/USDT: price=23.31 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BCH/USDT: price=597.14 pos=0.000000 entry=0.00 sl=0.00 size=0.000000
+2025-09-21 09:20:12,,,,,,,,,,INFO,[AutoScaler] eq=1000.00 -> RPT=0.0080 MAX_POS=3 MAX_GROSS=0.30
+2025-09-21 09:20:12,,,,,,,,,,DEBUG,[Filter] BTC/USDT rejected: filters not passed
+2025-09-21 09:20:12,,,,,,,,,,DEBUG,[Filter] ETH/USDT rejected: filters not passed
+2025-09-21 09:20:12,,,,,,,,,,DEBUG,[Filter] SOL/USDT rejected: filters not passed
+2025-09-21 09:20:12,,,,,,,,,,DEBUG,[Filter] ADA/USDT rejected: filters not passed
+2025-09-21 09:20:12,,,,,,,,,,DEBUG,[Filter] XRP/USDT rejected: filters not passed
+2025-09-21 09:20:12,,,,,,,,,,DEBUG,[Filter] LTC/USDT rejected: filters not passed
+2025-09-21 09:20:12,,,,,,,,,,DEBUG,[Filter] LINK/USDT rejected: filters not passed
+2025-09-21 09:20:12,,,,,,,,,,DEBUG,[Filter] BCH/USDT rejected: filters not passed
+2025-09-21 09:20:12,,,,,,,,,,INFO,[RiskBlock] Skip DOGE/USDT reason=gross-exposure
+2025-09-21 09:20:12,,,,,,,,,,INFO,[SizeReject] BNB/USDT qty=0 after rounding
+2025-09-21 09:20:12,,,,,,,,,,INFO,BTC/USDT: price=115749.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ETH/USDT: price=4495.00 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BNB/USDT: price=1078.58 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | SOL/USDT: price=240.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ADA/USDT: price=0.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | XRP/USDT: price=2.98 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | LTC/USDT: price=114.08 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | DOGE/USDT: price=0.27 pos=366.000000 entry=0.27 sl=0.25 size=366.000000 | LINK/USDT: price=23.30 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BCH/USDT: price=597.31 pos=0.000000 entry=0.00 sl=0.00 size=0.000000
+2025-09-21 09:20:32,,,,,,,,,,INFO,[AutoScaler] eq=1000.00 -> RPT=0.0080 MAX_POS=3 MAX_GROSS=0.30
+2025-09-21 09:20:32,,,,,,,,,,DEBUG,[Filter] BTC/USDT rejected: filters not passed
+2025-09-21 09:20:32,,,,,,,,,,DEBUG,[Filter] ETH/USDT rejected: filters not passed
+2025-09-21 09:20:32,,,,,,,,,,DEBUG,[Filter] SOL/USDT rejected: filters not passed
+2025-09-21 09:20:32,,,,,,,,,,DEBUG,[Filter] ADA/USDT rejected: filters not passed
+2025-09-21 09:20:32,,,,,,,,,,DEBUG,[Filter] XRP/USDT rejected: filters not passed
+2025-09-21 09:20:32,,,,,,,,,,DEBUG,[Filter] LTC/USDT rejected: filters not passed
+2025-09-21 09:20:32,,,,,,,,,,DEBUG,[Filter] LINK/USDT rejected: filters not passed
+2025-09-21 09:20:32,,,,,,,,,,DEBUG,[Filter] BCH/USDT rejected: filters not passed
+2025-09-21 09:20:32,,,,,,,,,,INFO,[RiskBlock] Skip DOGE/USDT reason=gross-exposure
+2025-09-21 09:20:32,,,,,,,,,,INFO,[SizeReject] BNB/USDT qty=0 after rounding
+2025-09-21 09:20:32,,,,,,,,,,INFO,BTC/USDT: price=115452.50 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ETH/USDT: price=4501.89 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BNB/USDT: price=1079.68 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | SOL/USDT: price=240.44 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ADA/USDT: price=0.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | XRP/USDT: price=2.98 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | LTC/USDT: price=114.05 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | DOGE/USDT: price=0.27 pos=366.000000 entry=0.27 sl=0.25 size=366.000000 | LINK/USDT: price=23.29 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BCH/USDT: price=597.23 pos=0.000000 entry=0.00 sl=0.00 size=0.000000
+2025-09-21 09:20:51,,,,,,,,,,INFO,[AutoScaler] eq=1000.00 -> RPT=0.0080 MAX_POS=3 MAX_GROSS=0.30
+2025-09-21 09:20:51,,,,,,,,,,DEBUG,[Filter] BTC/USDT rejected: filters not passed
+2025-09-21 09:20:51,,,,,,,,,,DEBUG,[Filter] ETH/USDT rejected: filters not passed
+2025-09-21 09:20:51,,,,,,,,,,DEBUG,[Filter] SOL/USDT rejected: filters not passed
+2025-09-21 09:20:51,,,,,,,,,,DEBUG,[Filter] ADA/USDT rejected: filters not passed
+2025-09-21 09:20:51,,,,,,,,,,DEBUG,[Filter] XRP/USDT rejected: filters not passed
+2025-09-21 09:20:51,,,,,,,,,,DEBUG,[Filter] LTC/USDT rejected: filters not passed
+2025-09-21 09:20:51,,,,,,,,,,DEBUG,[Filter] LINK/USDT rejected: filters not passed
+2025-09-21 09:20:51,,,,,,,,,,DEBUG,[Filter] BCH/USDT rejected: filters not passed
+2025-09-21 09:20:51,,,,,,,,,,INFO,[RiskBlock] Skip DOGE/USDT reason=gross-exposure
+2025-09-21 09:20:51,,,,,,,,,,INFO,[SizeReject] BNB/USDT qty=0 after rounding
+2025-09-21 09:20:51,,,,,,,,,,INFO,BTC/USDT: price=115452.50 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ETH/USDT: price=4501.89 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BNB/USDT: price=1077.83 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | SOL/USDT: price=240.42 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ADA/USDT: price=0.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | XRP/USDT: price=2.98 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | LTC/USDT: price=114.02 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | DOGE/USDT: price=0.27 pos=366.000000 entry=0.27 sl=0.25 size=366.000000 | LINK/USDT: price=23.30 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BCH/USDT: price=597.31 pos=0.000000 entry=0.00 sl=0.00 size=0.000000
+2025-09-21 09:21:14,,,,,,,,,,INFO,[AutoScaler] eq=1000.00 -> RPT=0.0080 MAX_POS=3 MAX_GROSS=0.30
+2025-09-21 09:21:14,,,,,,,,,,DEBUG,[Filter] BTC/USDT rejected: filters not passed
+2025-09-21 09:21:14,,,,,,,,,,DEBUG,[Filter] ETH/USDT rejected: filters not passed
+2025-09-21 09:21:14,,,,,,,,,,DEBUG,[Filter] SOL/USDT rejected: filters not passed
+2025-09-21 09:21:14,,,,,,,,,,DEBUG,[Filter] ADA/USDT rejected: filters not passed
+2025-09-21 09:21:14,,,,,,,,,,DEBUG,[Filter] XRP/USDT rejected: filters not passed
+2025-09-21 09:21:14,,,,,,,,,,DEBUG,[Filter] LTC/USDT rejected: filters not passed
+2025-09-21 09:21:14,,,,,,,,,,DEBUG,[Filter] LINK/USDT rejected: filters not passed
+2025-09-21 09:21:14,,,,,,,,,,DEBUG,[Filter] BCH/USDT rejected: filters not passed
+2025-09-21 09:21:14,,,,,,,,,,INFO,[RiskBlock] Skip DOGE/USDT reason=gross-exposure
+2025-09-21 09:21:14,,,,,,,,,,INFO,[SizeReject] BNB/USDT qty=0 after rounding
+2025-09-21 09:21:14,,,,,,,,,,INFO,BTC/USDT: price=115452.50 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ETH/USDT: price=4501.89 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BNB/USDT: price=1077.83 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | SOL/USDT: price=240.41 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ADA/USDT: price=0.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | XRP/USDT: price=2.98 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | LTC/USDT: price=113.99 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | DOGE/USDT: price=0.27 pos=366.000000 entry=0.27 sl=0.25 size=366.000000 | LINK/USDT: price=23.27 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BCH/USDT: price=596.66 pos=0.000000 entry=0.00 sl=0.00 size=0.000000
+2025-09-21 09:21:36,,,,,,,,,,INFO,[AutoScaler] eq=1000.00 -> RPT=0.0080 MAX_POS=3 MAX_GROSS=0.30
+2025-09-21 09:21:36,,,,,,,,,,DEBUG,[Filter] BTC/USDT rejected: filters not passed
+2025-09-21 09:21:36,,,,,,,,,,DEBUG,[Filter] ETH/USDT rejected: filters not passed
+2025-09-21 09:21:36,,,,,,,,,,DEBUG,[Filter] SOL/USDT rejected: filters not passed
+2025-09-21 09:21:36,,,,,,,,,,DEBUG,[Filter] ADA/USDT rejected: filters not passed
+2025-09-21 09:21:37,,,,,,,,,,DEBUG,[Filter] XRP/USDT rejected: filters not passed
+2025-09-21 09:21:37,,,,,,,,,,DEBUG,[Filter] LTC/USDT rejected: filters not passed
+2025-09-21 09:21:37,,,,,,,,,,DEBUG,[Filter] LINK/USDT rejected: filters not passed
+2025-09-21 09:21:37,,,,,,,,,,DEBUG,[Filter] BCH/USDT rejected: filters not passed
+2025-09-21 09:21:37,,,,,,,,,,INFO,[RiskBlock] Skip DOGE/USDT reason=gross-exposure
+2025-09-21 09:21:37,,,,,,,,,,INFO,[SizeReject] BNB/USDT qty=0 after rounding
+2025-09-21 09:21:37,,,,,,,,,,INFO,BTC/USDT: price=115409.70 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ETH/USDT: price=4462.96 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BNB/USDT: price=1077.83 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | SOL/USDT: price=240.39 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ADA/USDT: price=0.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | XRP/USDT: price=2.98 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | LTC/USDT: price=113.86 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | DOGE/USDT: price=0.27 pos=366.000000 entry=0.27 sl=0.25 size=366.000000 | LINK/USDT: price=23.23 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BCH/USDT: price=596.36 pos=0.000000 entry=0.00 sl=0.00 size=0.000000
+2025-09-21 09:22:00,,,,,,,,,,INFO,[AutoScaler] eq=1000.00 -> RPT=0.0080 MAX_POS=3 MAX_GROSS=0.30
+2025-09-21 09:22:00,,,,,,,,,,DEBUG,[Filter] BTC/USDT rejected: filters not passed
+2025-09-21 09:22:00,,,,,,,,,,DEBUG,[Filter] ETH/USDT rejected: filters not passed
+2025-09-21 09:22:00,,,,,,,,,,DEBUG,[Filter] SOL/USDT rejected: filters not passed
+2025-09-21 09:22:00,,,,,,,,,,DEBUG,[Filter] ADA/USDT rejected: filters not passed
+2025-09-21 09:22:00,,,,,,,,,,DEBUG,[Filter] XRP/USDT rejected: filters not passed
+2025-09-21 09:22:00,,,,,,,,,,DEBUG,[Filter] LTC/USDT rejected: filters not passed
+2025-09-21 09:22:00,,,,,,,,,,DEBUG,[Filter] LINK/USDT rejected: filters not passed
+2025-09-21 09:22:00,,,,,,,,,,DEBUG,[Filter] BCH/USDT rejected: filters not passed
+2025-09-21 09:22:00,,,,,,,,,,INFO,[SizeReject] BNB/USDT qty=0 after rounding
+2025-09-21 09:22:00,,,,,,,,,,INFO,[RiskBlock] Skip DOGE/USDT reason=gross-exposure
+2025-09-21 09:22:00,,,,,,,,,,INFO,BTC/USDT: price=115390.00 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ETH/USDT: price=4467.67 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BNB/USDT: price=1077.83 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | SOL/USDT: price=240.35 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ADA/USDT: price=0.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | XRP/USDT: price=2.98 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | LTC/USDT: price=113.80 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | DOGE/USDT: price=0.27 pos=366.000000 entry=0.27 sl=0.25 size=366.000000 | LINK/USDT: price=23.25 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BCH/USDT: price=596.66 pos=0.000000 entry=0.00 sl=0.00 size=0.000000
+2025-09-21 09:22:22,,,,,,,,,,INFO,[AutoScaler] eq=1000.00 -> RPT=0.0080 MAX_POS=3 MAX_GROSS=0.30
+2025-09-21 09:22:22,,,,,,,,,,DEBUG,[Filter] BTC/USDT rejected: filters not passed
+2025-09-21 09:22:22,,,,,,,,,,DEBUG,[Filter] SOL/USDT rejected: filters not passed
+2025-09-21 09:22:22,,,,,,,,,,DEBUG,[Filter] ADA/USDT rejected: filters not passed
+2025-09-21 09:22:22,,,,,,,,,,DEBUG,[Filter] XRP/USDT rejected: filters not passed
+2025-09-21 09:22:22,,,,,,,,,,DEBUG,[Filter] LTC/USDT rejected: filters not passed
+2025-09-21 09:22:22,,,,,,,,,,DEBUG,[Filter] LINK/USDT rejected: filters not passed
+2025-09-21 09:22:22,,,,,,,,,,DEBUG,[Filter] BCH/USDT rejected: filters not passed
+2025-09-21 09:22:22,,,,,,,,,,INFO,[SizeReject] ETH/USDT qty=0 after rounding
+2025-09-21 09:22:22,,,,,,,,,,INFO,[SizeReject] BNB/USDT qty=0 after rounding
+2025-09-21 09:22:22,,,,,,,,,,INFO,[RiskBlock] Skip DOGE/USDT reason=gross-exposure
+2025-09-21 09:22:22,,,,,,,,,,INFO,BTC/USDT: price=115406.00 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ETH/USDT: price=4599.00 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BNB/USDT: price=1077.83 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | SOL/USDT: price=240.30 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ADA/USDT: price=0.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | XRP/USDT: price=2.98 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | LTC/USDT: price=113.81 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | DOGE/USDT: price=0.27 pos=366.000000 entry=0.27 sl=0.25 size=366.000000 | LINK/USDT: price=23.25 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BCH/USDT: price=596.68 pos=0.000000 entry=0.00 sl=0.00 size=0.000000
+2025-09-21 09:22:47,,,,,,,,,,INFO,[AutoScaler] eq=1000.00 -> RPT=0.0080 MAX_POS=3 MAX_GROSS=0.30
+2025-09-21 09:22:47,,,,,,,,,,DEBUG,[Filter] BTC/USDT rejected: filters not passed
+2025-09-21 09:22:47,,,,,,,,,,DEBUG,[Filter] SOL/USDT rejected: filters not passed
+2025-09-21 09:22:47,,,,,,,,,,DEBUG,[Filter] ADA/USDT rejected: filters not passed
+2025-09-21 09:22:47,,,,,,,,,,DEBUG,[Filter] XRP/USDT rejected: filters not passed
+2025-09-21 09:22:47,,,,,,,,,,DEBUG,[Filter] LTC/USDT rejected: filters not passed
+2025-09-21 09:22:47,,,,,,,,,,DEBUG,[Filter] LINK/USDT rejected: filters not passed
+2025-09-21 09:22:47,,,,,,,,,,DEBUG,[Filter] BCH/USDT rejected: filters not passed
+2025-09-21 09:22:47,,,,,,,,,,INFO,[SizeReject] ETH/USDT qty=0 after rounding
+2025-09-21 09:22:47,,,,,,,,,,INFO,[SizeReject] BNB/USDT qty=0 after rounding
+2025-09-21 09:22:47,,,,,,,,,,INFO,[RiskBlock] Skip DOGE/USDT reason=gross-exposure
+2025-09-21 09:22:47,,,,,,,,,,INFO,BTC/USDT: price=115398.60 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ETH/USDT: price=4599.00 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BNB/USDT: price=1077.83 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | SOL/USDT: price=240.27 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ADA/USDT: price=0.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | XRP/USDT: price=2.98 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | LTC/USDT: price=113.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | DOGE/USDT: price=0.27 pos=366.000000 entry=0.27 sl=0.25 size=366.000000 | LINK/USDT: price=23.26 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BCH/USDT: price=596.95 pos=0.000000 entry=0.00 sl=0.00 size=0.000000
+2025-09-21 09:23:10,,,,,,,,,,INFO,[AutoScaler] eq=1000.00 -> RPT=0.0080 MAX_POS=3 MAX_GROSS=0.30
+2025-09-21 09:23:10,,,,,,,,,,DEBUG,[Filter] BTC/USDT rejected: filters not passed
+2025-09-21 09:23:10,,,,,,,,,,DEBUG,[Filter] ETH/USDT rejected: filters not passed
+2025-09-21 09:23:10,,,,,,,,,,DEBUG,[Filter] SOL/USDT rejected: filters not passed
+2025-09-21 09:23:10,,,,,,,,,,DEBUG,[Filter] ADA/USDT rejected: filters not passed
+2025-09-21 09:23:10,,,,,,,,,,DEBUG,[Filter] XRP/USDT rejected: filters not passed
+2025-09-21 09:23:10,,,,,,,,,,DEBUG,[Filter] LTC/USDT rejected: filters not passed
+2025-09-21 09:23:10,,,,,,,,,,DEBUG,[Filter] LINK/USDT rejected: filters not passed
+2025-09-21 09:23:10,,,,,,,,,,DEBUG,[Filter] BCH/USDT rejected: filters not passed
+2025-09-21 09:23:10,,,,,,,,,,INFO,[SizeReject] BNB/USDT qty=0 after rounding
+2025-09-21 09:23:10,,,,,,,,,,INFO,[RiskBlock] Skip DOGE/USDT reason=gross-exposure
+2025-09-21 09:23:10,,,,,,,,,,INFO,BTC/USDT: price=115452.50 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ETH/USDT: price=4488.00 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BNB/USDT: price=1077.83 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | SOL/USDT: price=240.17 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ADA/USDT: price=0.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | XRP/USDT: price=2.98 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | LTC/USDT: price=113.91 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | DOGE/USDT: price=0.27 pos=366.000000 entry=0.27 sl=0.25 size=366.000000 | LINK/USDT: price=23.28 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BCH/USDT: price=597.07 pos=0.000000 entry=0.00 sl=0.00 size=0.000000
+2025-09-21 09:23:30,,,,,,,,,,INFO,[AutoScaler] eq=1000.00 -> RPT=0.0080 MAX_POS=3 MAX_GROSS=0.30
+2025-09-21 09:23:30,,,,,,,,,,DEBUG,[Filter] BTC/USDT rejected: filters not passed
+2025-09-21 09:23:30,,,,,,,,,,DEBUG,[Filter] ETH/USDT rejected: filters not passed
+2025-09-21 09:23:30,,,,,,,,,,DEBUG,[Filter] SOL/USDT rejected: filters not passed
+2025-09-21 09:23:30,,,,,,,,,,DEBUG,[Filter] ADA/USDT rejected: filters not passed
+2025-09-21 09:23:30,,,,,,,,,,DEBUG,[Filter] XRP/USDT rejected: filters not passed
+2025-09-21 09:23:30,,,,,,,,,,DEBUG,[Filter] LTC/USDT rejected: filters not passed
+2025-09-21 09:23:30,,,,,,,,,,DEBUG,[Filter] LINK/USDT rejected: filters not passed
+2025-09-21 09:23:30,,,,,,,,,,DEBUG,[Filter] BCH/USDT rejected: filters not passed
+2025-09-21 09:23:30,,,,,,,,,,INFO,[SizeReject] BNB/USDT qty=0 after rounding
+2025-09-21 09:23:30,,,,,,,,,,INFO,[RiskBlock] Skip DOGE/USDT reason=gross-exposure
+2025-09-21 09:23:30,,,,,,,,,,INFO,BTC/USDT: price=115452.50 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ETH/USDT: price=4488.00 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BNB/USDT: price=1078.34 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | SOL/USDT: price=240.12 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ADA/USDT: price=0.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | XRP/USDT: price=2.98 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | LTC/USDT: price=113.94 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | DOGE/USDT: price=0.27 pos=366.000000 entry=0.27 sl=0.25 size=366.000000 | LINK/USDT: price=23.27 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BCH/USDT: price=597.01 pos=0.000000 entry=0.00 sl=0.00 size=0.000000
+2025-09-21 09:23:49,,,,,,,,,,INFO,[AutoScaler] eq=1000.00 -> RPT=0.0080 MAX_POS=3 MAX_GROSS=0.30
+2025-09-21 09:23:49,,,,,,,,,,DEBUG,[Filter] BTC/USDT rejected: filters not passed
+2025-09-21 09:23:49,,,,,,,,,,DEBUG,[Filter] ETH/USDT rejected: filters not passed
+2025-09-21 09:23:49,,,,,,,,,,DEBUG,[Filter] SOL/USDT rejected: filters not passed
+2025-09-21 09:23:49,,,,,,,,,,DEBUG,[Filter] XRP/USDT rejected: filters not passed
+2025-09-21 09:23:49,,,,,,,,,,DEBUG,[Filter] LTC/USDT rejected: filters not passed
+2025-09-21 09:23:49,,,,,,,,,,DEBUG,[Filter] LINK/USDT rejected: filters not passed
+2025-09-21 09:23:49,,,,,,,,,,DEBUG,[Filter] BCH/USDT rejected: filters not passed
+2025-09-21 09:23:49,,,,,,,,,,INFO,[RiskBlock] Skip ADA/USDT reason=gross-exposure
+2025-09-21 09:23:49,,,,,,,,,,INFO,[SizeReject] BNB/USDT qty=0 after rounding
+2025-09-21 09:23:49,,,,,,,,,,INFO,[RiskBlock] Skip DOGE/USDT reason=gross-exposure
+2025-09-21 09:23:49,,,,,,,,,,INFO,BTC/USDT: price=115452.50 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ETH/USDT: price=4479.64 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BNB/USDT: price=1078.34 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | SOL/USDT: price=240.09 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ADA/USDT: price=0.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | XRP/USDT: price=2.98 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | LTC/USDT: price=113.91 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | DOGE/USDT: price=0.27 pos=366.000000 entry=0.27 sl=0.25 size=366.000000 | LINK/USDT: price=23.27 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BCH/USDT: price=596.93 pos=0.000000 entry=0.00 sl=0.00 size=0.000000
+2025-09-21 09:24:12,,,,,,,,,,INFO,[AutoScaler] eq=1000.00 -> RPT=0.0080 MAX_POS=3 MAX_GROSS=0.30
+2025-09-21 09:24:12,,,,,,,,,,DEBUG,[Filter] BTC/USDT rejected: filters not passed
+2025-09-21 09:24:12,,,,,,,,,,DEBUG,[Filter] ETH/USDT rejected: filters not passed
+2025-09-21 09:24:12,,,,,,,,,,DEBUG,[Filter] SOL/USDT rejected: filters not passed
+2025-09-21 09:24:12,,,,,,,,,,DEBUG,[Filter] ADA/USDT rejected: filters not passed
+2025-09-21 09:24:12,,,,,,,,,,DEBUG,[Filter] XRP/USDT rejected: filters not passed
+2025-09-21 09:24:12,,,,,,,,,,DEBUG,[Filter] LTC/USDT rejected: filters not passed
+2025-09-21 09:24:12,,,,,,,,,,DEBUG,[Filter] LINK/USDT rejected: filters not passed
+2025-09-21 09:24:12,,,,,,,,,,DEBUG,[Filter] BCH/USDT rejected: filters not passed
+2025-09-21 09:24:12,,,,,,,,,,INFO,[SizeReject] BNB/USDT qty=0 after rounding
+2025-09-21 09:24:12,,,,,,,,,,INFO,[RiskBlock] Skip DOGE/USDT reason=gross-exposure
+2025-09-21 09:24:12,,,,,,,,,,INFO,BTC/USDT: price=115452.50 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ETH/USDT: price=4475.07 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BNB/USDT: price=1078.59 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | SOL/USDT: price=240.07 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ADA/USDT: price=0.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | XRP/USDT: price=2.98 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | LTC/USDT: price=113.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | DOGE/USDT: price=0.27 pos=366.000000 entry=0.27 sl=0.25 size=366.000000 | LINK/USDT: price=23.27 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BCH/USDT: price=596.92 pos=0.000000 entry=0.00 sl=0.00 size=0.000000
+2025-09-21 09:24:37,,,,,,,,,,INFO,[AutoScaler] eq=1000.00 -> RPT=0.0080 MAX_POS=3 MAX_GROSS=0.30
+2025-09-21 09:24:37,,,,,,,,,,DEBUG,[Filter] BTC/USDT rejected: filters not passed
+2025-09-21 09:24:37,,,,,,,,,,DEBUG,[Filter] SOL/USDT rejected: filters not passed
+2025-09-21 09:24:37,,,,,,,,,,DEBUG,[Filter] ADA/USDT rejected: filters not passed
+2025-09-21 09:24:37,,,,,,,,,,DEBUG,[Filter] XRP/USDT rejected: filters not passed
+2025-09-21 09:24:37,,,,,,,,,,DEBUG,[Filter] LTC/USDT rejected: filters not passed
+2025-09-21 09:24:37,,,,,,,,,,DEBUG,[Filter] LINK/USDT rejected: filters not passed
+2025-09-21 09:24:37,,,,,,,,,,DEBUG,[Filter] BCH/USDT rejected: filters not passed
+2025-09-21 09:24:37,,,,,,,,,,INFO,[SizeReject] BNB/USDT qty=0 after rounding
+2025-09-21 09:24:37,,,,,,,,,,INFO,[RiskBlock] Skip DOGE/USDT reason=gross-exposure
+2025-09-21 09:24:37,,,,,,,,,,INFO,[SizeReject] ETH/USDT qty=0 after rounding
+2025-09-21 09:24:37,,,,,,,,,,INFO,BTC/USDT: price=115452.50 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ETH/USDT: price=4599.00 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BNB/USDT: price=1078.55 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | SOL/USDT: price=240.05 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ADA/USDT: price=0.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | XRP/USDT: price=2.98 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | LTC/USDT: price=113.91 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | DOGE/USDT: price=0.27 pos=366.000000 entry=0.27 sl=0.25 size=366.000000 | LINK/USDT: price=23.27 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BCH/USDT: price=597.01 pos=0.000000 entry=0.00 sl=0.00 size=0.000000
+2025-09-21 09:24:56,,,,,,,,,,INFO,[AutoScaler] eq=1000.00 -> RPT=0.0080 MAX_POS=3 MAX_GROSS=0.30
+2025-09-21 09:24:56,,,,,,,,,,DEBUG,[Filter] BTC/USDT rejected: filters not passed
+2025-09-21 09:24:56,,,,,,,,,,DEBUG,[Filter] SOL/USDT rejected: filters not passed
+2025-09-21 09:24:56,,,,,,,,,,DEBUG,[Filter] ADA/USDT rejected: filters not passed
+2025-09-21 09:24:56,,,,,,,,,,DEBUG,[Filter] XRP/USDT rejected: filters not passed
+2025-09-21 09:24:56,,,,,,,,,,DEBUG,[Filter] LTC/USDT rejected: filters not passed
+2025-09-21 09:24:56,,,,,,,,,,DEBUG,[Filter] LINK/USDT rejected: filters not passed
+2025-09-21 09:24:56,,,,,,,,,,DEBUG,[Filter] BCH/USDT rejected: filters not passed
+2025-09-21 09:24:56,,,,,,,,,,INFO,[SizeReject] BNB/USDT qty=0 after rounding
+2025-09-21 09:24:56,,,,,,,,,,INFO,[RiskBlock] Skip DOGE/USDT reason=gross-exposure
+2025-09-21 09:24:56,,,,,,,,,,INFO,[SizeReject] ETH/USDT qty=0 after rounding
+2025-09-21 09:24:56,,,,,,,,,,INFO,BTC/USDT: price=115659.40 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ETH/USDT: price=4560.00 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BNB/USDT: price=1078.55 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | SOL/USDT: price=240.05 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ADA/USDT: price=0.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | XRP/USDT: price=2.98 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | LTC/USDT: price=113.89 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | DOGE/USDT: price=0.27 pos=366.000000 entry=0.27 sl=0.25 size=366.000000 | LINK/USDT: price=23.27 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BCH/USDT: price=597.03 pos=0.000000 entry=0.00 sl=0.00 size=0.000000
+2025-09-21 09:25:17,,,,,,,,,,INFO,[AutoScaler] eq=1000.00 -> RPT=0.0080 MAX_POS=3 MAX_GROSS=0.30
+2025-09-21 09:25:17,,,,,,,,,,DEBUG,[Filter] BTC/USDT rejected: filters not passed
+2025-09-21 09:25:17,,,,,,,,,,DEBUG,[Filter] SOL/USDT rejected: filters not passed
+2025-09-21 09:25:18,,,,,,,,,,DEBUG,[Filter] ADA/USDT rejected: filters not passed
+2025-09-21 09:25:18,,,,,,,,,,DEBUG,[Filter] XRP/USDT rejected: filters not passed
+2025-09-21 09:25:18,,,,,,,,,,DEBUG,[Filter] LTC/USDT rejected: filters not passed
+2025-09-21 09:25:18,,,,,,,,,,DEBUG,[Filter] LINK/USDT rejected: filters not passed
+2025-09-21 09:25:18,,,,,,,,,,DEBUG,[Filter] BCH/USDT rejected: filters not passed
+2025-09-21 09:25:18,,,,,,,,,,INFO,[SizeReject] BNB/USDT qty=0 after rounding
+2025-09-21 09:25:18,,,,,,,,,,INFO,[RiskBlock] Skip DOGE/USDT reason=gross-exposure
+2025-09-21 09:25:18,,,,,,,,,,INFO,[SizeReject] ETH/USDT qty=0 after rounding
+2025-09-21 09:25:18,,,,,,,,,,INFO,BTC/USDT: price=115452.50 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ETH/USDT: price=4560.00 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BNB/USDT: price=1078.55 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | SOL/USDT: price=240.06 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ADA/USDT: price=0.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | XRP/USDT: price=2.98 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | LTC/USDT: price=113.88 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | DOGE/USDT: price=0.27 pos=366.000000 entry=0.27 sl=0.25 size=366.000000 | LINK/USDT: price=23.26 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BCH/USDT: price=596.88 pos=0.000000 entry=0.00 sl=0.00 size=0.000000
+2025-09-21 09:25:38,,,,,,,,,,INFO,[AutoScaler] eq=1000.00 -> RPT=0.0080 MAX_POS=3 MAX_GROSS=0.30
+2025-09-21 09:25:38,,,,,,,,,,DEBUG,[Filter] BTC/USDT rejected: filters not passed
+2025-09-21 09:25:38,,,,,,,,,,DEBUG,[Filter] ETH/USDT rejected: filters not passed
+2025-09-21 09:25:38,,,,,,,,,,DEBUG,[Filter] SOL/USDT rejected: filters not passed
+2025-09-21 09:25:38,,,,,,,,,,DEBUG,[Filter] ADA/USDT rejected: filters not passed
+2025-09-21 09:25:38,,,,,,,,,,DEBUG,[Filter] XRP/USDT rejected: filters not passed
+2025-09-21 09:25:38,,,,,,,,,,DEBUG,[Filter] LTC/USDT rejected: filters not passed
+2025-09-21 09:25:38,,,,,,,,,,DEBUG,[Filter] LINK/USDT rejected: filters not passed
+2025-09-21 09:25:38,,,,,,,,,,DEBUG,[Filter] BCH/USDT rejected: filters not passed
+2025-09-21 09:25:38,,,,,,,,,,INFO,[SizeReject] BNB/USDT qty=0 after rounding
+2025-09-21 09:25:38,,,,,,,,,,INFO,[RiskBlock] Skip DOGE/USDT reason=gross-exposure
+2025-09-21 09:25:38,,,,,,,,,,INFO,BTC/USDT: price=115710.20 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ETH/USDT: price=4485.30 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BNB/USDT: price=1079.20 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | SOL/USDT: price=240.04 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ADA/USDT: price=0.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | XRP/USDT: price=2.98 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | LTC/USDT: price=113.84 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | DOGE/USDT: price=0.27 pos=366.000000 entry=0.27 sl=0.25 size=366.000000 | LINK/USDT: price=23.45 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BCH/USDT: price=596.68 pos=0.000000 entry=0.00 sl=0.00 size=0.000000
+2025-09-21 09:25:57,,,,,,,,,,INFO,[AutoScaler] eq=1000.00 -> RPT=0.0080 MAX_POS=3 MAX_GROSS=0.30
+2025-09-21 09:25:57,,,,,,,,,,DEBUG,[Filter] BTC/USDT rejected: filters not passed
+2025-09-21 09:25:57,,,,,,,,,,DEBUG,[Filter] ETH/USDT rejected: filters not passed
+2025-09-21 09:25:57,,,,,,,,,,DEBUG,[Filter] SOL/USDT rejected: filters not passed
+2025-09-21 09:25:57,,,,,,,,,,DEBUG,[Filter] ADA/USDT rejected: filters not passed
+2025-09-21 09:25:57,,,,,,,,,,DEBUG,[Filter] XRP/USDT rejected: filters not passed
+2025-09-21 09:25:57,,,,,,,,,,DEBUG,[Filter] LTC/USDT rejected: filters not passed
+2025-09-21 09:25:57,,,,,,,,,,DEBUG,[Filter] LINK/USDT rejected: filters not passed
+2025-09-21 09:25:57,,,,,,,,,,DEBUG,[Filter] BCH/USDT rejected: filters not passed
+2025-09-21 09:25:57,,,,,,,,,,INFO,[SizeReject] BNB/USDT qty=0 after rounding
+2025-09-21 09:25:57,,,,,,,,,,INFO,[RiskBlock] Skip DOGE/USDT reason=gross-exposure
+2025-09-21 09:25:57,,,,,,,,,,INFO,BTC/USDT: price=115710.20 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ETH/USDT: price=4485.30 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BNB/USDT: price=1079.25 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | SOL/USDT: price=240.02 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ADA/USDT: price=0.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | XRP/USDT: price=2.98 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | LTC/USDT: price=113.89 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | DOGE/USDT: price=0.27 pos=366.000000 entry=0.27 sl=0.25 size=366.000000 | LINK/USDT: price=23.25 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BCH/USDT: price=596.78 pos=0.000000 entry=0.00 sl=0.00 size=0.000000
+2025-09-21 09:26:18,,,,,,,,,,INFO,[AutoScaler] eq=1000.00 -> RPT=0.0080 MAX_POS=3 MAX_GROSS=0.30
+2025-09-21 09:26:18,,,,,,,,,,DEBUG,[Filter] BTC/USDT rejected: filters not passed
+2025-09-21 09:26:18,,,,,,,,,,DEBUG,[Filter] ETH/USDT rejected: filters not passed
+2025-09-21 09:26:18,,,,,,,,,,DEBUG,[Filter] SOL/USDT rejected: filters not passed
+2025-09-21 09:26:18,,,,,,,,,,DEBUG,[Filter] ADA/USDT rejected: filters not passed
+2025-09-21 09:26:18,,,,,,,,,,DEBUG,[Filter] XRP/USDT rejected: filters not passed
+2025-09-21 09:26:18,,,,,,,,,,DEBUG,[Filter] LTC/USDT rejected: filters not passed
+2025-09-21 09:26:18,,,,,,,,,,DEBUG,[Filter] LINK/USDT rejected: filters not passed
+2025-09-21 09:26:18,,,,,,,,,,DEBUG,[Filter] BCH/USDT rejected: filters not passed
+2025-09-21 09:26:18,,,,,,,,,,INFO,[SizeReject] BNB/USDT qty=0 after rounding
+2025-09-21 09:26:18,,,,,,,,,,INFO,[RiskBlock] Skip DOGE/USDT reason=gross-exposure
+2025-09-21 09:26:18,,,,,,,,,,INFO,BTC/USDT: price=115710.20 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ETH/USDT: price=4485.30 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BNB/USDT: price=1079.08 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | SOL/USDT: price=240.22 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ADA/USDT: price=0.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | XRP/USDT: price=2.98 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | LTC/USDT: price=113.87 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | DOGE/USDT: price=0.27 pos=366.000000 entry=0.27 sl=0.25 size=366.000000 | LINK/USDT: price=23.25 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BCH/USDT: price=596.78 pos=0.000000 entry=0.00 sl=0.00 size=0.000000
+2025-09-21 09:26:39,,,,,,,,,,INFO,[AutoScaler] eq=1000.00 -> RPT=0.0080 MAX_POS=3 MAX_GROSS=0.30
+2025-09-21 09:26:39,,,,,,,,,,DEBUG,[Filter] BTC/USDT rejected: filters not passed
+2025-09-21 09:26:39,,,,,,,,,,DEBUG,[Filter] ETH/USDT rejected: filters not passed
+2025-09-21 09:26:39,,,,,,,,,,DEBUG,[Filter] SOL/USDT rejected: filters not passed
+2025-09-21 09:26:39,,,,,,,,,,DEBUG,[Filter] ADA/USDT rejected: filters not passed
+2025-09-21 09:26:39,,,,,,,,,,DEBUG,[Filter] XRP/USDT rejected: filters not passed
+2025-09-21 09:26:39,,,,,,,,,,DEBUG,[Filter] LTC/USDT rejected: filters not passed
+2025-09-21 09:26:39,,,,,,,,,,DEBUG,[Filter] LINK/USDT rejected: filters not passed
+2025-09-21 09:26:39,,,,,,,,,,DEBUG,[Filter] BCH/USDT rejected: filters not passed
+2025-09-21 09:26:39,,,,,,,,,,INFO,[SizeReject] BNB/USDT qty=0 after rounding
+2025-09-21 09:26:39,,,,,,,,,,INFO,[RiskBlock] Skip DOGE/USDT reason=gross-exposure
+2025-09-21 09:26:39,,,,,,,,,,INFO,BTC/USDT: price=115710.20 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ETH/USDT: price=4485.30 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BNB/USDT: price=1079.25 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | SOL/USDT: price=240.02 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | ADA/USDT: price=0.90 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | XRP/USDT: price=2.98 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | LTC/USDT: price=113.83 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | DOGE/USDT: price=0.27 pos=366.000000 entry=0.27 sl=0.25 size=366.000000 | LINK/USDT: price=23.24 pos=0.000000 entry=0.00 sl=0.00 size=0.000000 | BCH/USDT: price=596.56 pos=0.000000 entry=0.00 sl=0.00 size=0.000000
